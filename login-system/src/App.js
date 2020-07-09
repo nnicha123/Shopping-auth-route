@@ -10,15 +10,6 @@ function App() {
   return (
 
     <Router className="router">
-      {/* <div className="App">
-
-        <li><NavLink exact to='/login'>Login</NavLink></li>
-        <li><NavLink exact to='/register'>Register</NavLink></li>
-        <li><NavLink exact to='/all'>All</NavLink></li>
-        <li><NavLink exact to='/bags'>Bags</NavLink></li>
-        <li><NavLink exact to='/cakes'>Cakes</NavLink></li>
-        <li><NavLink exact to='/games'>Games</NavLink></li>
-      </div> */}
       <Route exact path='/all' component={Shopping}/>
       <Route exact path='/login' component={Login} />
       <Route exact path='/register' component={Register} />
