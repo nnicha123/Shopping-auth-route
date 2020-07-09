@@ -16,7 +16,7 @@ function Register() {
         console.log('Success:', values);
         axios.post('http://localhost:8000/users/register', values).then((res) => console.log(res))
         notification.success({ message: 'User successfully created!' })
-        window.location.replace('/login')
+        window.location.replace('/')
     };
 
     const onFinishFailed = errorInfo => {
@@ -28,7 +28,7 @@ function Register() {
             <Header>
                 <div className="logo" />
                 <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
-                    <Menu.Item key="1" onClick={() => { window.location.replace('/Login') }}>Login</Menu.Item>
+                    <Menu.Item key="1" onClick={() => { window.location.replace('/') }}>Login</Menu.Item>
                 </Menu>
             </Header>
 

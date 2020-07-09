@@ -10,7 +10,7 @@ function CheckOuts(props) {
     const logOut = values => {
         LocalStorageService.removeToken()
         notification.info({message:'You are now logged out'})
-        window.location.replace('/login')
+        window.location.replace('/')
     }
 
     return (
